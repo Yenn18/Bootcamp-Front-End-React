@@ -1,0 +1,124 @@
+<<<<<<< HEAD
+@font-face {
+    font-family: 'Mayro';
+    src: url(/Atenea/mayro-kart-retro/MayroKartRetro-Regular.ttf);
+}
+
+body{
+    background-image: linear-gradient(to right, pink, indigo);
+    font-family: 'Mayro',sans-serif;
+    font-size: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    text-shadow: 2px 2px 5px red;
+    
+   
+}
+.confetti-button {
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display:block;
+
+}
+
+.confetti-button:hover {
+    background-color: #65b300;
+    text-align: center;
+}
+.container {
+    border-radius: 8px;
+}
+.reproducir {
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display:block;
+    
+}
+
+.reproducir:hover {
+    background-color: #45a049;
+}
+
+audio {
+    margin: 10px 0;
+    width: 100%;
+=======
+@font-face {
+    font-family: 'Mayro';
+    src: url(/Atenea/mayro-kart-retro/MayroKartRetro-Regular.ttf);
+}
+
+body{
+    background-image: linear-gradient(to right, pink, indigo);
+    font-family: 'Mayro',sans-serif;
+    font-size: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    text-shadow: 2px 2px 5px red;
+    
+   
+}
+.confetti-button {
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display:block;
+
+}
+
+.confetti-button:hover {
+    background-color: #65b300;
+    text-align: center;
+}
+.container {
+    border-radius: 8px;
+}
+.reproducir {
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display:block;
+    
+}
+
+.reproducir:hover {
+    background-color: #45a049;
+}
+
+audio {
+    margin: 10px 0;
+    width: 100%;
+>>>>>>> 651e694dbadce7ff45e2963fd1f619852e58a3b6
+}

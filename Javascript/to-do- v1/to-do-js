@@ -1,0 +1,165 @@
+<<<<<<< HEAD
+// Mini "base de datos"
+const toTask = [];
+
+
+//Crear un menu con el boton Añadir
+
+function agrerarTarea() {
+    let menu;
+    do{
+        menu = prompt(
+            "Menu de ejemplo: \n" +
+            "1. ver Tareas \n" +
+            "2. Agrerar Tarea \n" +
+            "3. Salir \n"+
+            "4. ElegirOpcion (1-4):"
+        );
+    switch (menu) {
+
+            case '1':
+                viewTasks();
+                break;
+            case '2':
+                addTask();
+                break;
+            case '3':
+                alert("Seguro quieres Salir");
+                break;
+        default:
+            alert("No es correcto, vuelve a intentarlo");
+    }
+} while (menu !== '3');
+}
+// Ver tareas que tengo en mi mini base de datos
+function viewTasks() {
+    if (toTask.length === 0) {
+        alert("No hay tareas pendientes.");
+    } else {
+        let tasks = "Tareas pendientes:\n";
+        toTask.forEach((task, index) => {
+            tasks += `${index + 1}. ${task}\n`;
+        });
+        alert(tasks);
+    }
+}
+
+// Agregar tarea con esta funcion puedo añadir tarea 
+function addTask() {
+    const newTask = prompt("Añade tarea:");
+    if (newTask) {
+        toTask.push(newTask);
+        alert(`Tarea "${newTask}" agregada.`);
+    } else {
+        alert("No has añadido ninguna tarea.");
+    }
+}
+
+// Creamos una funcion para quitar tarea.
+function QuitarTarea() {
+    const taskNumber = parseInt(prompt("Quita la tarea que quieras"));
+    if (taskNumber > 0 && taskNumber <= toTask.length) {
+        const removedTask = toTask.splice(taskNumber - 1, 1);
+        alert(`Tarea "${removedTask}" eliminada.`);
+    } else {
+        alert("No es correcto el numero de.");
+    }
+}
+// Con esta funcion podemos modificar la tarea que quieramos.
+function ActualizarTarea() {
+    const taskNumber = parseInt(prompt("Introduce el numero de tarea que quiere modificar"));
+    if (taskNumber > 0 && taskNumber <= toTask.length) {
+        const newTask = prompt("Añade la modificacion");
+        if (newTask) {
+            toTask[taskNumber - 1] = newTask;
+            alert(`Tarea ${taskNumber} modificada a "${newTask}".`);
+        } else {
+            alert("No se realizo la modificacion, que quiere cambiar");
+        }
+    } else {
+        alert("Numero no es correcto de la tarea");
+    }
+}
+=======
+// Mini "base de datos"
+const toTask = [];
+
+
+//Crear un menu con el boton Añadir
+
+function agrerarTarea() {
+    let menu;
+    do{
+        menu = prompt(
+            "Menu de ejemplo: \n" +
+            "1. ver Tareas \n" +
+            "2. Agrerar Tarea \n" +
+            "3. Salir \n"+
+            "4. ElegirOpcion (1-4):"
+        );
+    switch (menu) {
+
+            case '1':
+                viewTasks();
+                break;
+            case '2':
+                addTask();
+                break;
+            case '3':
+                alert("Seguro quieres Salir");
+                break;
+        default:
+            alert("No es correcto, vuelve a intentarlo");
+    }
+} while (menu !== '3');
+}
+// Ver tareas que tengo en mi mini base de datos
+function viewTasks() {
+    if (toTask.length === 0) {
+        alert("No hay tareas pendientes.");
+    } else {
+        let tasks = "Tareas pendientes:\n";
+        toTask.forEach((task, index) => {
+            tasks += `${index + 1}. ${task}\n`;
+        });
+        alert(tasks);
+    }
+}
+
+// Agregar tarea con esta funcion puedo añadir tarea 
+function addTask() {
+    const newTask = prompt("Añade tarea:");
+    if (newTask) {
+        toTask.push(newTask);
+        alert(`Tarea "${newTask}" agregada.`);
+    } else {
+        alert("No has añadido ninguna tarea.");
+    }
+}
+
+// Creamos una funcion para quitar tarea.
+function QuitarTarea() {
+    const taskNumber = parseInt(prompt("Quita la tarea que quieras"));
+    if (taskNumber > 0 && taskNumber <= toTask.length) {
+        const removedTask = toTask.splice(taskNumber - 1, 1);
+        alert(`Tarea "${removedTask}" eliminada.`);
+    } else {
+        alert("No es correcto el numero de.");
+    }
+}
+// Con esta funcion podemos modificar la tarea que quieramos.
+function ActualizarTarea() {
+    const taskNumber = parseInt(prompt("Introduce el numero de tarea que quiere modificar"));
+    if (taskNumber > 0 && taskNumber <= toTask.length) {
+        const newTask = prompt("Añade la modificacion");
+        if (newTask) {
+            toTask[taskNumber - 1] = newTask;
+            alert(`Tarea ${taskNumber} modificada a "${newTask}".`);
+        } else {
+            alert("No se realizo la modificacion, que quiere cambiar");
+        }
+    } else {
+        alert("Numero no es correcto de la tarea");
+    }
+}
+>>>>>>> 651e694dbadce7ff45e2963fd1f619852e58a3b6

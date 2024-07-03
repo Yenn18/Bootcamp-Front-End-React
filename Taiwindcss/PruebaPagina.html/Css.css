@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter/Inter-VariableFont_slnt\,wght.ttf')
+}
+*{
+    border: 2px border black;
+}
+.caja {
+    position: relative;
+}
+.imagen{
+    width: 500px;
+    
+
+}
+body {
+    font-family:"Inter", sans-serif;
+    font-size: 15px;
+    
+}
+.letra1{
+    position: absolute;
+    top: 0;
+    left:4em;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 2rem;
+}
