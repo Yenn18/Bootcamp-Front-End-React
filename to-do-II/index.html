@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do II</title>
+</head>
+<!--hola que tal-->
+<body class="min-h-screen bg-gray-900 text-pice-light-gray">
+    <div class="absolute top-0 -z-10">
+      <img class="w-screen h-100px" src="/public/img/bg-mobile-dark.jpg" alt="">
+    </div>
+    
+    <div class="max-w-xl px-6 mx-auto my-8">
+      <div class="flex items-center justify-between mb-10">
+        <h1 class="text-3xl font-bold tracking-[11px] ">TODOII</h1>
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="currentColor">
+          <path fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/>
+        </svg>
+      </div>
+      <form class="relative mb-7 input-form">
+        <div class="relative">
+          <input class="w-full px-6 py-4 pr-16 text-gray-500 bg-gray-800 rounded mb-15" type="text" placeholder="Create new Task ..." name="task" required>
+          <button class="absolute inset-y-0 right-0 px-4 bg-gray-800 rounded-r" type="submit">Add</button>
+        </div>
+      </form>
+
+      <section class="overflow-hidden bg-gray-800 rounded shadow-lg task-list-section mt-9">
+        <!-- Aquí donde ponemos las tareas que queramos añadir -->
+      </section>
+
+      <section class="flex justify-between px-3 py-4 bg-gray-800 border-t-[1px] border-gray-700 rounded-b-lg">
+        <span class="text-gray-500"><span class="uncompleted-counter"></span>Item left</span>
+        <button class="text-gray-500">completed task</button>
+      </section>
+    
+      <section class="flex justify-center gap-4 p-3 mt-4 font-bold bg-gray-800 rounded">
+        <button class="text-gray-500 hover:text-indigo-600 btn-all">All</button>
+        <button class="text-gray-500 hover:text-indigo-600 btn-active">Active</button>
+        <button class="text-gray-500 hover:text-indigo-600 btn-completed">Completed</button>
+        <button class="text-gray-500 hover:text-indigo-600 delete-completed">Delete Completed</button>
+      </section>
+    </div>
+
+
+  <script type="module" src="src/main.js"></script>
+  <!--<script type="module" src="src/Main.ts"></script>-->
+</body>
+</html>

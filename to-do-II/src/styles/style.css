@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('/public/fonts/Josefin_Sans/JosefinSans-Variable.woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('/public/fonts/Josefin_Sans/JosefinSans-Italic-Variable.woff2');
+    font-style: italic;
+}
