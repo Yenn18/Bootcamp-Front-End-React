@@ -1,6 +1,8 @@
 import Title from './components/title';
-import NormaClassFor from './components/normaClassFor';
-import NormasBasicas from './components/normasbasicas';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import NormaClassFor from './components/NormaClassFor';
+import NormasBasicas from './components/Normasbasicas';
 import NormasCierraEtiqueta from './components/NormaCierreEtiquetas';
 import NormaEventos from './components/NormasEventos';
 import './App.css'
@@ -14,6 +16,8 @@ function App() {
       <NormaClassFor />
       <NormasCierraEtiqueta /> 
       <NormaEventos></NormaEventos>
+      <About></About>
+      <Blog> </Blog>
 
 
       <input type="text" />
