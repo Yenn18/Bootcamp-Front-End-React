@@ -1,7 +1,6 @@
-import MybuttonNextPage from './pages/About.tsx';
+import MybuttonLinks from './pages/About.tsx';
 import HeaderApp from './components/Header.tsx';
-
-import './App.css';
+import MenuApp from './components/menu.tsx';
 
 function App() {
   return (
@@ -9,8 +8,11 @@ function App() {
     <HeaderApp></HeaderApp>
       <main>
         <h1>Proyecto</h1>
-      </main> 
-        <MybuttonNextPage></MybuttonNextPage>
+      </main>
+        <MenuApp>
+          
+        </MenuApp>
+        <MybuttonLinks></MybuttonLinks>
     </>
   )
 }
