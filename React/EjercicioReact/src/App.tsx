@@ -1,7 +1,6 @@
 import MybuttonLinks from './pages/About.tsx';
 import HeaderApp from './components/Header.tsx';
-import BooksPage from './pages/BooksPage.tsx';
-
+import BookItem from './components/BookItem.tsx';
 
 function App() {
   return (
@@ -12,9 +11,7 @@ function App() {
         <h1>Proyecto</h1>
         
         <MybuttonLinks></MybuttonLinks>
-     
-
-      <BooksPage></BooksPage>
+     <BookItem />
       </main>
     </>
   )

@@ -1,0 +1,33 @@
+.btn{
+border-radius: 50px;
+background-color: blue;
+display: block;
+
+}
+
+.container { 
+    border: 1px solid gray;
+    display: inline-block; 
+}
+.title{
+    font-size: 18px;
+    color: black;
+    text-align: start;
+}
+.author {
+    font-style: italic;
+    font-size: 15px;
+    color: gray;
+    padding: 2rem;
+    text-align: start;
+
+}
+
+.buttonIcon { 
+    color: crimson; 
+    
+}
+.buttonIcon1{
+    color:blue;
+    
+}

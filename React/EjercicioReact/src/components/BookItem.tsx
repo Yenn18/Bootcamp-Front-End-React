@@ -1,15 +1,24 @@
 import { BiEditAlt } from "react-icons/bi"; 
 import { VscClose } from "react-icons/vsc";
+import BookPage from "../pages/BooksPage";
+import styles from "./myCss.module.css";
 
-export default function BookItem(){
+console.log(styles);
+
+function BookItem(){
+
     return(
-        <div>
-            <h1>El perfume</h1>
-            <span>patrick suskind</span>
-            <button> novela</button>
-            <button><BiEditAlt /></button>
-            <button><VscClose /></button>
+        <div className={styles.container}>
+        <BookPage>
+        </BookPage>
+            <h1 className={styles.title}>El Perfume</h1>
+            <span className={styles.author}>Patrick suskind</span>
+            <button className={styles.btn}>Novela</button>
+            <button className={styles.buttonIcon} ><BiEditAlt /></button>
+            <button className={styles.buttonIcon1} ><VscClose /></button>
             <p>19.9€</p>
         </div>
     )
 }
+
+export default BookItem;
