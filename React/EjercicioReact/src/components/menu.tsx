@@ -1,14 +1,17 @@
+import LogoMenu from "./LogoMenu"
 
 
 export default function MenuApp() {
 return(
-    <>
-     <nav>
-        <a href="">Home</a>
-        <a href="">Libros</a>
-        <a href="">LogIn</a>
-    </nav>
-    
+    <>  
+    <div> 
+        <LogoMenu></LogoMenu>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/Libros">Libros</a>
+            <a href="/LogIn">LogIn</a>
+        </nav>
+    </div>
     </>
 )
 }

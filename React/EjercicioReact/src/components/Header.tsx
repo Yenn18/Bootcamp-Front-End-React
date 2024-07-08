@@ -1,13 +1,17 @@
 import LogoApp from "./Logo.tsx"
+import MenuApp from "./menu.tsx"
 
 export default function HeaderApp (){
 
     return (
-        <>
-            <div>   
-                <LogoApp></LogoApp>  
+        <>  
+           
+            <MenuApp /> 
+            <div> 
+                  <LogoApp /> 
                 <h2>Encabezado</h2>
             </div>
+            
           
         </>
     )
