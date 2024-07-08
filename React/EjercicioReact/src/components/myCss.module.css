@@ -1,33 +1,57 @@
-.btn{
-border-radius: 50px;
-background-color: blue;
-display: block;
-
-}
 
 .container { 
     border: 1px solid gray;
-    display: inline-block; 
+    margin: 1rem;
+    padding: 0.1rem; 
+    position: absolute;
 }
-.title{
+
+.title {
     font-size: 18px;
     color: black;
-    text-align: start;
+    margin: 0.5rem 0;
 }
+
 .author {
     font-style: italic;
     font-size: 15px;
     color: gray;
-    padding: 2rem;
-    text-align: start;
+    margin-top: 1rem;
 
+}
+
+.btn {
+    border-radius: 60px;
+    background-color: gray;
+    padding: 5px 10px;
+    position: relative;
+    left: 90px;
+}
+
+.price {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.buttonsContainer{
+position: absolute;
 }
 
 .buttonIcon { 
-    color: crimson; 
-    
+    color: blue;
+    background: none;
+    border: none;
+    position: relative;
+    left: 190px;
+    bottom: 40px;
+    font-size: 15px;
 }
-.buttonIcon1{
-    color:blue;
-    
+
+.buttonIcon1 {
+    color: crimson;
+    background: none;
+    border: none;
+    position: relative;
+    left: 190px;
+    bottom: 40px;
+    font-size: 15px;
 }
