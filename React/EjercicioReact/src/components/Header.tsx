@@ -5,13 +5,14 @@ export default function HeaderApp (){
 
     return (
         <>  
+
             <MenuApp /> 
             <div> 
                   <LogoApp /> 
-                <h2>Encabezado</h2>
+                <h2>BOOSKSTORE</h2>
             </div>
             
-          
+            
         </>
     )
 }

@@ -1,21 +1,30 @@
 import { BiEditAlt } from "react-icons/bi"; 
 import { VscTrash } from "react-icons/vsc";
-import BookPage from "../pages/BooksPage";
 import styles from "./myCss.module.css";
+import { CgBorderStyleSolid } from "react-icons/cg";
+
 
 function BookItem(){
     return (
-        <div className={styles.container}>
-            <BookPage />
-            <h1 className={styles.title}>El Perfume</h1>
-            <span className={styles.author}>Patrick Suskind</span>
-            <button className={styles.btn}>Novela</button>
-            <p className={styles.price}>19.9€</p>
-            <div className={styles.buttonsContainer}>
-                <button className={styles.buttonIcon} ><BiEditAlt /></button>
-                <button className={styles.buttonIcon1} ><VscTrash /></button>
-            </div>
+        <> 
+        <div className={styles.img}>
+                <img src="/El perfume.jpg" width={270} height={290} alt="El perfume" />
+             <div className={styles.title}>
+                <span>El Perfume</span>
+                </div>
+             <div className={styles.container}>
+                <span className={styles.author}>Patrick Suskind</span>
+                <span className={styles.button}>Novela</span>
+             </div>
+                <div className={styles.price}>
+                <span>19.9€</span>
+                </div>
+                <div className={styles.container1}>
+                    <button className={styles.button1}><BiEditAlt /></button>
+                    <button className={styles.button2}><VscTrash /></button>
+                </div>
         </div>
+     </>
     );
 }
 

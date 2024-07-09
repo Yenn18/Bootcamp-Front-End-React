@@ -1,8 +1,11 @@
+import BookItem from '../components/BookItem';
 
-export default function BookPage (){
+export default function Books (){
     return (
-        <div>
-            <img src="/El perfume.jpg" width={270} height={290} alt="El perfume" />
-        </div>
+        <>
+        <section>
+            <BookItem></BookItem>
+        </section>
+        </>
     )
 }

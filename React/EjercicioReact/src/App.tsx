@@ -1,19 +1,17 @@
 import MybuttonLinks from './pages/About.tsx';
 import HeaderApp from './components/Header.tsx';
 import BookItem from './components/BookItem.tsx';
+import './index.css';
 
 function App() {
   return (
-    <>   
-    <main>
-        <HeaderApp />
 
-        <h1>Proyecto</h1>
-        
+      <main>
+        <HeaderApp />
         <MybuttonLinks></MybuttonLinks>
-     <BookItem />
+        <BookItem />
+
       </main>
-    </>
   )
 }
 
