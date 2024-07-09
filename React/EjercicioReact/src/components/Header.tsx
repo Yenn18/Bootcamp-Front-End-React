@@ -5,7 +5,6 @@ export default function HeaderApp (){
 
     return (
         <>  
-           
             <MenuApp /> 
             <div> 
                   <LogoApp /> 
