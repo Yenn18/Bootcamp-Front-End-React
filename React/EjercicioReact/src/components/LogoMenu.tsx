@@ -1,9 +1,8 @@
+import { AiOutlineMenu } from "react-icons/ai"; 
 export default function LogoMenu () {
     return (
         <>
-             <button>
-                    <img src="/LogoMenu.png" alt="LogoMenu" />
-            </button>
+            <AiOutlineMenu size={35} color="black"/>
         </>
     )
 }

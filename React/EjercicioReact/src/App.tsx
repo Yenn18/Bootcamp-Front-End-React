@@ -5,12 +5,16 @@ import './index.css';
 
 function App() {
   return (
-
-      <main>
-        <HeaderApp />
-        <MybuttonLinks></MybuttonLinks>
+    <div className="flex-col min-h-screen">
+       <HeaderApp />
+      <main className="grow w-3/4 max-w-4xl mx-auto my-20">
          <BooksPage></BooksPage>
       </main>
+      <main className='flex flex-col'>
+      <MybuttonLinks></MybuttonLinks>
+
+      </main>
+    </div>
   )
 }
 
