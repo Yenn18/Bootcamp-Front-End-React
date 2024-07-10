@@ -4,12 +4,11 @@ import MenuApp from "./menu.tsx"
 export default function HeaderApp (){
 
     return (
-        <>  
-
-            <MenuApp /> 
-            <div> 
+        <>   
+            <div className="bg-violet-500 px-4 py-4 flex items-center"> 
+                <MenuApp />
                   <LogoApp /> 
-                <h2>BOOSKSTORE</h2>
+                <h2 className=" text-4xl font-bold ">BOOSKSTORE</h2>
             </div>
             
             

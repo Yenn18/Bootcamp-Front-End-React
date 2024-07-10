@@ -1,6 +1,6 @@
 import MybuttonLinks from './pages/About.tsx';
 import HeaderApp from './components/Header.tsx';
-import BookItem from './components/BookItem.tsx';
+import BooksPage from './pages/BooksPage.tsx'
 import './index.css';
 
 function App() {
@@ -9,8 +9,7 @@ function App() {
       <main>
         <HeaderApp />
         <MybuttonLinks></MybuttonLinks>
-        <BookItem />
-
+         <BooksPage></BooksPage>
       </main>
   )
 }

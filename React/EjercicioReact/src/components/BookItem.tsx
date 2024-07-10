@@ -1,31 +1,49 @@
 import { BiEditAlt } from "react-icons/bi"; 
 import { VscTrash } from "react-icons/vsc";
 import styles from "./myCss.module.css";
-import { CgBorderStyleSolid } from "react-icons/cg";
+import { MyBook } from "../config/types"
 
 
-function BookItem(){
+type Props = {
+   book: MyBook
+};
+const handleEditButtton = (booktitle:string) => {
+   console.log(`Estás editando el libro: ${booktitle}`);
+ };
+
+ const handleDeleteButtton = (booktitle:string) => {
+   console.log(`Estás borrando el libro: ${booktitle}`);
+ };
+
+function BookItem(props: Props){
+   const { book } = props;
+
     return (
         <> 
-        <div className={styles.img}>
-                <img src="/El perfume.jpg" width={270} height={290} alt="El perfume" />
-             <div className={styles.title}>
-                <span>El Perfume</span>
+        <div className={styles.row}>
+                <img src={book.photo} alt={`Portada ${book.title}`} />
+             <div className={styles.book}>
+                <span className={styles.title}>{book.title}</span>
                 </div>
-             <div className={styles.container}>
-                <span className={styles.author}>Patrick Suskind</span>
-                <span className={styles.button}>Novela</span>
+             <div className={styles.row}>
+                <span className={styles.author}>{book.author}</span>
+                <span className={styles.button}>{book.type}</span>
              </div>
-                <div className={styles.price}>
-                <span>19.9€</span>
+                <div className={styles.row}>
+                <span>${book.price}€</span>
                 </div>
                 <div className={styles.container1}>
-                    <button className={styles.button1}><BiEditAlt /></button>
-                    <button className={styles.button2}><VscTrash /></button>
-                </div>
+                <button className={styles.button1} onClick={() => handleEditButtton(book.title)}>
+                   <BiEditAlt />
+               </button>
+               <button className={styles.button2} onClick={() => handleDeleteButtton(book.title)}>
+                   <VscTrash />
+               </button>
+               </div>
         </div>
      </>
     );
 }
+
 
 export default BookItem;

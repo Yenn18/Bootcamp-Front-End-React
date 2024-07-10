@@ -1,11 +1,10 @@
-import BookItem from '../components/BookItem';
+import BookList from "../components/BookList"
 
-export default function Books (){
-    return (
-        <>
-        <section>
-            <BookItem></BookItem>
-        </section>
-        </>
-    )
+function Books() {
+  
+  return (
+    <BookList />
+  )
 }
+
+export default Books;

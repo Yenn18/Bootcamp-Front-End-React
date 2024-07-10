@@ -3,15 +3,13 @@ import LogoMenu from "./LogoMenu"
 
 export default function MenuApp() {
 return(
-    <>  
-    <div> 
-        <LogoMenu></LogoMenu>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/Libros">Libros</a>
-            <a href="/LogIn">LogIn</a>
-        </nav>
-    </div>
+    <> 
+        <nav className="flex">
+            <LogoMenu />
+            <a className="px-1" href="/">Home</a>
+            <a className="px-1" href="/Libros">Libros</a>
+            <a className="px-1" href="/LogIn">LogIn</a>
+        </nav> 
     </>
 )
 }
