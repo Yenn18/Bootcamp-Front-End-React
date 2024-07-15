@@ -1,6 +1,6 @@
 
-export default function LogIn(){
-    console.log('LogIn')
+export default function EditBook(){
+    console.log('EditBook')
     return (
         <>  
         <h1> hola</h1>

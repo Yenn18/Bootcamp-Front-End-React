@@ -1,11 +1,10 @@
 
-
-export default function PageLibros(){
+export default function Libros(){
+    console.log('Libros')
     return (
-        <>
-        <div>
-            <h1></h1>
-        </div>
+        <>  
+        <h1> hola</h1>
+        <p> xD</p>
         </>
     )
 }

@@ -1,8 +1,10 @@
 
-export default function PageHome(){
+export default function Home(){
+    console.log('home')
     return (
         <>  
-        <h1></h1>
+        <h1> hola</h1>
+        <p>has llegado</p>
         </>
     )
 }

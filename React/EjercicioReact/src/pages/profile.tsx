@@ -1,6 +1,6 @@
 
-export default function LogIn(){
-    console.log('LogIn')
+export default function Profile(){
+    console.log('Profile')
     return (
         <>  
         <h1> hola</h1>
